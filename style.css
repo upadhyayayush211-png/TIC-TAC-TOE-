@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #548675;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box{
+    height: 18vh;
+    width: 18vh;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem #00000070;
+    font-size: 8vmin;
+    color: #0b020e;
+    background-color: #a9ab3e;
+    cursor: pointer;
+}
+
+#Reset{
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #0d0212;
+    color: white;
+    box-shadow: 0 0 1rem #00000070;
+    cursor: pointer;
+}
+
+#new-btn{
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #0d0212;
+    color: white;
+    box-shadow: 0 0 1rem #00000070;
+    cursor: pointer;
+}
+
+/* note: msg-container used as class in HTML */
+.msg-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem #00000070;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 220px;
+    gap: 0.5rem;
+}
+
+#msg{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hide{
+    display: none;
+}
